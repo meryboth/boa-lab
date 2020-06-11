@@ -1,0 +1,116 @@
+/* index, header y footer */
+@mixin header {background-color: none;
+    width: 80%;
+    color: $black;
+    padding: 2rem;
+    display: -ms-grid;
+    display: grid;
+    margin: auto;
+    grid-gap: 2rem;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: header;}
+@mixin header-menu { background-color: none;
+    width: auto;
+    padding: 0.5rem;}
+
+@mixin animacion-index {-webkit-animation: scale-in-center 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        animation: scale-in-center 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;}
+
+@mixin footer {background-color: none;
+    width: 80%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: auto;
+    min-height: 5rem;}
+@mixin footer-prefix {-ms-flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        -ms-grid-row: 4;
+        -ms-grid-column: 1;}
+@mixin copyright-prefix {-ms-flex-wrap: wrap;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        -webkit-box-align: center;
+        -ms-flex-align: center;}
+@mixin redes-prefix {display: -webkit-box;
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    -webkit-box-align: center;
+    -ms-flex-align: center;}
+
+/* proyectos */
+
+@mixin contenedores {width: 100%;
+    margin: 10px auto;
+    display: grid;
+    grid-gap: 0.5rem;}
+
+@mixin proyectos-prefix {display: -ms-grid;
+    -ms-grid-columns: (1fr)[1];
+    -ms-grid-rows: (1fr)[4];}
+
+@mixin encabezado-contenedor {background-color: none;
+    width: 80%;
+    min-height: 11rem;
+    color: black;
+    padding: 2rem;
+    display: -ms-grid;
+    display: grid;
+    margin: auto;
+    grid-gap: 0.5rem;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;}
+
+@mixin encabezado-titulo {max-width: 45rem;
+    margin: 0rem 0rem 4rem;}
+
+@mixin galeria-prefix {-webkit-box-sizing: border-box;
+    display: -ms-grid;
+    -ms-flex-line-pack: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-columns: (3fr)[5];
+    -ms-grid-rows: auto;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -webkit-transform: translateY(-5rem);}
+@mixin bloque-yellow ($altura-yellow) {background-color: $yellow;
+    padding: 2rem 12.5rem 2rem;
+    width: 32rem;
+    height: $altura-yellow;
+    margin: 0rem 0rem 0rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;}
+@mixin bloque-yellow-h2 {font-size: 3rem;
+        font-weight: lighter;}
+
+/* quienes somos */
+
+@mixin bios {background-color: none;
+            width: 70%;
+            margin: auto;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;}
+
+@mixin contenedor-gris {background-color: #d5d5d5;
+    width: 80%;
+    padding: 3rem 0;
+    border-radius: 3rem;
+    margin: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;}
+
+

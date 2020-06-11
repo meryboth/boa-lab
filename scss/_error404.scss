@@ -1,0 +1,36 @@
+.error {background-color: $white;
+    .error__logo {display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0rem 2rem;
+        img {width: 7rem;}}
+    .error-message {@extend .error__logo;
+        text-align: center;
+        h1 {font-size: 4rem;
+            animation: vibrate-1 0.3s linear infinite both;}
+        p {font-size: 0.9rem;}
+        img {width: 45rem;}}
+
+}
+
+@keyframes vibrate-1 {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(-2px, 2px);
+    }
+    40% {
+      transform: translate(-2px, -2px);
+    }
+    60% {
+      transform: translate(2px, 2px);
+    }
+    80% {
+      transform: translate(2px, -2px);
+    }
+    100% {
+      transform: translate(0);
+    }}
+

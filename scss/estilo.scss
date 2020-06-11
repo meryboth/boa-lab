@@ -1,0 +1,53 @@
+/* colores */
+
+$yellow: #f2e70f;
+$white: #f5f5f5;
+$grey: #d5d5d5;
+$black: black;
+
+/*fuentes*/
+$tipografia-principal: 'Montserrat', sans-serif;
+$tipografia-titulos: 'Josefin Sans', sans-serif;
+
+/*tamaño de fuentes*/
+
+$tipografia-s-estandar: 1rem;
+$tipografia-s-titulos: 2rem;
+
+/*propiedades de contenedores*/
+
+$altura-yellow: heigh;
+$translate-yellow: translateY();
+
+/*seteos generales*/
+
+* {margin: 0;
+    padding: 0;
+    body {background:$white;
+        color: $black;
+        font-family: $tipografia-principal;
+        font-size: $tipografia-s-estandar;}
+        h1, h2, h3, h4 {font-family: $tipografia-titulos;
+            font-size: $tipografia-s-titulos;}}
+
+/*archivos importados*/
+
+@import "_mixins";
+@import "_header";
+@import "_footer";
+@import "_index";
+@import "_proyectos";
+@import "_quienes-somos";
+@import "_servicios";
+@import "_contacto";
+@import "_mediaqueries";
+@import "_error404";
+
+
+
+
+            
+  
+  
+                
+                  

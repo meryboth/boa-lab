@@ -1,0 +1,33 @@
+.header-contenedor {
+    @include header;
+    grid-area: header;}
+.header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 90%;
+    flex-basis: 90%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    .header__img {width: 7rem;}
+    .menu {@include header-menu;}}
+        .header__navbar {
+            li {display: inline-block;}
+            a {text-decoration: none;
+                color: black;
+                padding: 1rem;}
+            .nav-item {padding: 2rem 1rem;
+                    a {color: black;
+                        text-decoration: none;
+                        &:hover {background-color: #f2e70f;}}}}
+
+
+
+                                

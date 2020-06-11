@@ -1,0 +1,79 @@
+#contenedor-quienes-somos {
+    @include contenedores;
+        grid-template-columns: repeat(1 1fr);
+        grid-template-rows: repeat(9 1fr);
+        grid-template-areas: "header"
+   "titulo-formula-boa"
+   "footer"; }
+  
+  /*titulo formula boa*/
+  .titulo-formula-boa {@include encabezado-contenedor;
+    grid-area: titulo;
+    h1 {@include encabezado-titulo;}}
+ 
+  
+  /*formula boa*/
+ 
+  .ciudades {@include bloque-yellow (11rem);
+    h2 {@include bloque-yellow-h2;
+    transform: translateY(-4.5rem);}}
+
+    .formula-boa {
+    background-color: none;
+    display: block;
+    width: 100%;
+    margin: auto;
+    height: auto;
+    video {
+        display: block;
+        width: 80%;
+        overflow: hidden;
+        margin: 1rem auto 3rem;
+        border-radius: 3rem;
+        -webkit-transform: translateY(-5rem);
+        transform: translateY(-5rem);}}
+  
+  .perfiles {@include bloque-yellow (11rem);
+    h3 {@include bloque-yellow-h2;
+        transform: translateY(-4.5rem);}}
+  
+    .perfiles-boa {@include contenedor-gris;
+    transform: translateY(-5rem);
+    img {margin: 0rem 5rem 0rem;}}
+
+    
+  
+  .bios-boa {@include bios;
+    p {width: 37%;
+        text-align: center;
+        margin: 0rem 2rem 0rem;
+                transform: translateY(-3rem);}}
+   
+  .boa-workspaces {@include bios;
+    padding: 0rem 0rem 3rem;
+    img {width: 30rem;
+        height: 22rem;
+        border-radius: 0rem;
+        margin: 0rem 2rem 3rem; }}
+  
+    .aliados-boa {@include bloque-yellow (11rem);
+    h4 {@include bloque-yellow-h2;
+    transform: translateY(-4.5rem);}}
+
+    .perfiles-aliados {@include contenedor-gris;
+        transform: translateY(-5rem);
+        a {border: none;
+        &:hover {background-color: $white;}}
+        .bg-light {
+            background-color: transparent !important; }
+        .card {
+            box-sizing: border-box;
+            padding: 1rem;
+            height: auto;
+            width: 16rem;
+            border: none;
+            h5 {font-size: 1.2rem; } } }
+      
+      
+      
+      

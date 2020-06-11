@@ -1,0 +1,32 @@
+.footer {@include footer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    grid-area: footer;
+    @include footer-prefix;
+    .footer__copyright {
+        background-color: none;
+        font-size: 0.9rem;
+        /* Flexbox */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+    @include copyright-prefix;}
+    .footer__redes {@include redes-prefix;
+        background-color: none;
+        width: 10rem;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        i {font-size: 2rem;
+            color: black;
+            &:hover {font-size: 2rem;
+                color:$yellow;}}}}
+                
