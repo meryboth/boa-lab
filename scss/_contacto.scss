@@ -15,7 +15,8 @@
       justify-content: center;
       grid-area: formulario;
       align-items: center;
-      img {width: 40rem;}}
+      img {width: 40rem;
+    transform: translateX(-4rem);}}
   .ubicacion {background-color: none;
       display: block;
       text-align: center;
@@ -27,7 +28,7 @@
           height: 30rem;
           margin: 2rem;
           border-radius: 3rem;}}
-    .form {
+    .form {transform: translateX(-4rem);
     width: 35rem;
     display: inline-block;
         .contact1-form-title{
